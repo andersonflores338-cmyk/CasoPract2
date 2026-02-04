@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    background: #1e88e5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background: #eee;
+    flex-wrap: wrap;
+}
+
+nav button, nav select {
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+}
+
+nav button {
+    background: #1e88e5;
+    color: white;
+    cursor: pointer;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.seccion {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.oculto {
+    display: none;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #1e88e5;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.separador {
+    margin: 25px 0;
+    border-top: 2px solid #e0e0e0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 5px solid #1e88e5;
+}
+
+.evento-vacio {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
+
+video {
+    width: 100%;
+    border-radius: 12px;
+}

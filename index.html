@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestión de Eventos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1 id="tituloApp">Sistema de Gestión de Eventos</h1>
+</header>
+
+<nav>
+  <button id="navEventos" onclick="mostrarSeccion('eventos')">Eventos</button>
+  <button id="navUbicaciones" onclick="mostrarSeccion('ubicaciones')">Ubicaciones</button>
+  <button id="navContactos" onclick="mostrarSeccion('contactos')">Contactos</button>
+  <button id="navAyuda" onclick="mostrarSeccion('ayuda')">Ayuda</button>
+
+  <select id="idioma" onchange="cambiarIdioma()">
+    <option value="es">Español</option>
+    <option value="en">English</option>
+    <option value="fr">Français</option>
+    <option value="pt">Português</option>
+    <option value="it">Italiano</option>
+  </select>
+</nav>
+
+<main>
+
+<section id="eventos" class="seccion">
+  <h2 id="tituloEventos">Registrar Evento</h2>
+
+  <input id="tituloEvento" placeholder="Título">
+  <input id="invitadosEvento" placeholder="Invitados">
+  <input id="fechaEvento" type="datetime-local">
+  <input id="zonaEvento" placeholder="Zona horaria">
+  <textarea id="descripcionEvento" placeholder="Descripción"></textarea>
+  <input id="lugarEvento" placeholder="Lugar">
+
+  <button onclick="guardarEvento()">Guardar Evento</button>
+
+  <hr class="separador">
+
+  <h3 id="subEventos">Eventos Registrados</h3>
+  <ul id="listaEventosRegistrados">
+    <li class="evento-vacio" id="vacioEventos">Aún no hay eventos registrados</li>
+  </ul>
+</section>
+
+<section id="ubicaciones" class="seccion oculto">
+  <h2 id="tituloUbicaciones">Registrar Ubicación</h2>
+
+  <input id="tituloUbicacion" placeholder="Título">
+  <input id="direccionUbicacion" placeholder="Dirección">
+  <input id="coordenadasUbicacion" placeholder="Coordenadas">
+
+  <button onclick="guardarUbicacion()">Guardar Ubicación</button>
+
+  <hr class="separador">
+
+  <h3 id="subUbicaciones">Ubicaciones Registradas</h3>
+  <ul id="listaUbicaciones">
+    <li class="evento-vacio" id="vacioUbicaciones">Aún no hay ubicaciones registradas</li>
+  </ul>
+</section>
+
+<section id="contactos" class="seccion oculto">
+  <h2 id="tituloContactos">Registrar Contacto</h2>
+
+  <input id="saludoContacto" placeholder="Saludo">
+  <input id="nombreContacto" placeholder="Nombre completo">
+  <input id="correoContacto" placeholder="Correo electrónico">
+
+  <button onclick="guardarContacto()">Guardar Contacto</button>
+
+  <hr class="separador">
+
+  <h3 id="subContactos">Contactos Registrados</h3>
+  <ul id="listaContactos">
+    <li class="evento-vacio" id="vacioContactos">Aún no hay contactos registrados</li>
+  </ul>
+</section>
+
+<section id="ayuda" class="seccion oculto">
+  <h2 id="tituloAyuda">Ayuda del Sistema</h2>
+
+  <iframe
+    width="100%"
+    height="480"
+    src="C:\Users\hp\Desktop\video1024302136.mp4"
+    title="Video de ayuda"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  <p id="textoAyuda">Este video explica cómo usar el sistema.</p>
+</section>
+
+
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
